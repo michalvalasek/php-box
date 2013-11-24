@@ -66,6 +66,16 @@ apache:
                 - 'NETTE_ENV development'
             override:
                 - All
+        adminer:
+            servername: adminer.phpbox
+            serveraliases:
+                - www.adminer.phpbox
+            docroot: /var/www/adminer
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
     user: www-data
     group: www-data
     default_vhost: true
